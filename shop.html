@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Website Shop — Merchandise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- ========== STICKY NAVBAR ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="Sport Website home">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect width="24" height="24" rx="4" fill="none"></rect>
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+          <path d="M6 16c2-3 5-6 10-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <span class="site-title">Sport Website</span>
+      </a>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/" class="nav-link">Home</a></li>
+          <li><a href="/about.html" class="nav-link">About</a></li>
+          <li><a href="/shop.html" class="nav-link">Shop</a></li>
+          <li><a href="/gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="/sponsors.html" class="nav-link">Sponsors</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark / light">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Official Merchandise</h1>
+      <p class="hero-subtitle">Get your Sport Website kits, scarves, and accessories!</p>
+    </div>
+  </section>
+
+  <!-- ===== SHOP GRID ===== -->
+  <section class="section shop-section">
+    <div class="container">
+      <h2 class="section-title">Shop Merchandise</h2>
+      <div class="shop-grid">
+        <div class="product-card" data-name="Home Jersey" data-price="$49.99" data-desc="Official Sport Website home jersey. High-quality fabric for fans and players.">
+          <img src="images/home-jersey.jpg" alt="Home Jersey">
+          <h3>Home Jersey</h3>
+          <p class="price">$49.99</p>
+          <button class="btn btn-primary view-details">View Details</button>
+        </div>
+        <div class="product-card" data-name="Away Jersey" data-price="$49.99" data-desc="Official Sport Website away jersey. Lightweight and breathable.">
+          <img src="images/away-jersey.jpg" alt="Away Jersey">
+          <h3>Away Jersey</h3>
+          <p class="price">$49.99</p>
+          <button class="btn btn-primary view-details">View Details</button>
+        </div>
+        <div class="product-card" data-name="Scarf" data-price="$19.99" data-desc="Sport Website fan scarf. Perfect for stadiums or home decor.">
+          <img src="images/scarf.jpg" alt="Scarf">
+          <h3>Scarf</h3>
+          <p class="price">$19.99</p>
+          <button class="btn btn-primary view-details">View Details</button>
+        </div>
+        <div class="product-card" data-name="Cap" data-price="$14.99" data-desc="Official Sport Website cap. Adjustable size and stylish design.">
+          <img src="images/cap.jpg" alt="Cap">
+          <h3>Cap</h3>
+          <p class="price">$14.99</p>
+          <button class="btn btn-primary view-details">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCT MODAL ===== -->
+  <div id="productModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modalImg" src="" alt="">
+      <h3 id="modalName"></h3>
+      <p id="modalPrice"></p>
+      <p id="modalDesc"></p>
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sport Website — All rights reserved.</p>
+      <p class="motto">Club motto: Pride • Passion • Power</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

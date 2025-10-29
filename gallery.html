@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport Website — Gallery / Media</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ========== STICKY NAVBAR ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="Sport Website home">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect width="24" height="24" rx="4" fill="none"></rect>
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+          <path d="M6 16c2-3 5-6 10-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <span class="site-title">Sport Website</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+  <ul class="nav-list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="team.html" class="nav-link">Team</a></li>
+    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+      <div class="header-controls">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark / light">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-section">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Gallery & Media</h1>
+      <p class="hero-subtitle">Relive the moments — photos and videos from matches, stadium, and club events.</p>
+    </div>
+  </section>
+
+  <!-- ===== MEDIA GRID ===== -->
+  <section class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title">Photos & Videos</h2>
+      <div class="media-grid">
+        <!-- Photo -->
+        <div class="media-card" data-type="image" data-src="images/match1.jpg">
+          <img src="images/team1.jpg" alt="Match 1">
+          <span class="media-type">📷</span>
+        </div>
+        <div class="media-card" data-type="image" data-src="images/match2.jpg">
+          <img src="images/team4.jpg" alt="Match 2">
+          <span class="media-type">📷</span>
+        </div>
+        <!-- Video -->
+        <div class="media-card" data-type="video" data-src="videos/highlight1.mp4">
+          <img src="images/team2.jpg" alt="Video 1">
+          <span class="media-type">🎥</span>
+        </div>
+        <div class="media-card" data-type="video" data-src="videos/highlight2.mp4">
+          <img src="images/team3.jpg" alt="Video 2">
+          <span class="media-type">🎥</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LIGHTBOX MODAL ===== -->
+  <div id="mediaModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sport Website — All rights reserved.</p>
+      <p class="motto">Club motto: Pride • Passion • Power</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

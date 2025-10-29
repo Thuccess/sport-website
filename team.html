@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Team — Sport Website Football Club</title>
+  <meta name="description" content="Meet the players and coaching staff of Sport Website Football Club." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== STICKY NAVBAR ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="Sport Website home">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect width="24" height="24" rx="4" fill="none"></rect>
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+          <path d="M6 16c2-3 5-6 10-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <span class="site-title">Sport Website</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="team.html" class="nav-link active">Team</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-controls">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark / light">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <main>
+    <section class="hero-section" style="padding:5rem 0; background:linear-gradient(to right, var(--accent), var(--accent-secondary)); color:#fff; text-align:center;">
+      <div class="container">
+        <h1 class="hero-title">Our Team</h1>
+        <p class="hero-subtitle" style="max-width:650px; margin:auto;">
+          Meet the proud players and coaching staff of Sport Website Football Club — driven by unity, skill, and a passion for victory.
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== PLAYERS ========== -->
+    <section id="players" class="players-section">
+      <div class="container section-header">
+        <h2>Players</h2>
+        <p class="section-sub">Meet the squad — skill, heart, and unity.</p>
+      </div>
+
+      <div class="container players-grid">
+        <article class="player-card">
+          <div class="player-photo">
+            <img src="images/john.jpg" alt="Player One" onerror="this.style.opacity=0.85">
+          </div>
+          <div class="player-body">
+            <h3 class="player-name">John A. Deng</h3>
+            <p class="player-pos">Striker</p>
+            <p class="player-bio">Clinical finisher with lightning pace and a relentless work rate.</p>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-photo">
+            <img src="images/peter.jpg" alt="Player Two" onerror="this.style.opacity=0.85">
+          </div>
+          <div class="player-body">
+            <h3 class="player-name">Peter L. Kuol</h3>
+            <p class="player-pos">Central Midfielder</p>
+            <p class="player-bio">Midfield engine—great vision, sharp passing, and leadership on the field.</p>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-photo">
+            <img src="images/michael.jpg" alt="Player Three" onerror="this.style.opacity=0.85">
+          </div>
+          <div class="player-body">
+            <h3 class="player-name">Michael R. Ajok</h3>
+            <p class="player-pos">Left Back</p>
+            <p class="player-bio">Defensive rock with overlapping runs and precise crosses.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== COACHING STAFF ========== -->
+    <section class="section" style="padding:4rem 0; background:var(--card-bg);">
+      <div class="container section-header">
+        <h2 class="section-title">Coaching Staff</h2>
+        <p class="section-sub">The minds behind the success — strategy, discipline, and leadership.</p>
+      </div>
+
+      <div class="container" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem; text-align:center;">
+        <div class="card coach-card" style="padding:2rem; border-radius:12px; border:1px solid var(--border-color);">
+          <img src="images/coach1.jpg" alt="Head Coach" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+          <h3 style="margin-top:1rem;">Coach Lual B. Gatwech</h3>
+          <p style="opacity:0.8;">Head Coach — Experienced tactician focused on teamwork and attacking football.</p>
+        </div>
+
+        <div class="card coach-card" style="padding:2rem; border-radius:12px; border:1px solid var(--border-color);">
+          <img src="images/coach2.jpg" alt="Assistant Coach" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+          <h3 style="margin-top:1rem;">Peter D. Ruai</h3>
+          <p style="opacity:0.8;">Assistant Coach — Brings energy and motivation to every training session.</p>
+        </div>
+
+        <div class="card coach-card" style="padding:2rem; border-radius:12px; border:1px solid var(--border-color);">
+          <img src="images/coach3.jpg" alt="Fitness Coach" style="width:100%; height:240px; object-fit:cover; border-radius:10px;">
+          <h3 style="margin-top:1rem;">Mary J. Nyandeng</h3>
+          <p style="opacity:0.8;">Fitness Coach — Specializes in conditioning, stamina, and recovery training.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEAM STATS ========== -->
+    <section class="section" style="padding:4rem 0;">
+      <div class="container section-header">
+        <h2 class="section-title">Team Highlights</h2>
+        <p class="section-sub">A quick look at our achievements and milestones.</p>
+      </div>
+
+      <div class="container" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:2rem; text-align:center;">
+        <div>
+          <h3 class="stat-number" data-count="120">0</h3>
+          <p>Matches Played</p>
+        </div>
+        <div>
+          <h3 class="stat-number" data-count="85">0</h3>
+          <p>Wins</p>
+        </div>
+        <div>
+          <h3 class="stat-number" data-count="230">0</h3>
+          <p>Goals Scored</p>
+        </div>
+        <div>
+          <h3 class="stat-number" data-count="20">0</h3>
+          <p>Trophies</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sport Website — All rights reserved.</p>
+      <p class="motto">Club motto: Pride • Passion • Power</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sport Website — Sport Website Football Club</title>
+  <meta name="description" content="Official website of Sport Website — a professional football team representing South Sudan." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ========== STICKY NAVBAR ========== -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="/" aria-label="Sport Website home">
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect width="24" height="24" rx="4" fill="none"></rect>
+          <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"></circle>
+          <path d="M6 16c2-3 5-6 10-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"></path>
+        </svg>
+        <span class="site-title">Sport Website</span>
+      </a>
+
+      <nav class="nav" id="mainNav">
+  <ul class="nav-list">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="about.html" class="nav-link">About</a></li>
+    <li><a href="team.html" class="nav-link">Team</a></li>
+    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+    <li><a href="contact.html" class="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
+
+      <div class="header-controls">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark / light">
+          <span class="theme-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <main>
+    <section id="home" class="hero-section">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-title">Sport Website</h1>
+          <p class="hero-subtitle">Pride. Passion. Power. — Representing South Sudan on the pitch.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#matches">View Upcoming Matches</a>
+            <a class="btn btn-ghost" href="#players">Meet the Team</a>
+          </div>
+        </div>
+
+        <figure class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 600 400" class="hero-svg" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="rgba(0,255,180,0.18)"/>
+                <img src="images/southsudanesefootballers.jpg" alt="ss" />
+                <stop offset="1" stop-color="rgba(0,200,255,0.12)"/>
+              </linearGradient>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#g1)"></rect>
+          </svg>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== PLAYERS ========== -->
+    <section id="players" class="players-section">
+      <div class="container section-header">
+        <h2>Players</h2>
+        <p class="section-sub">Meet the squad — skill, heart, and unity.</p>
+      </div>
+
+      <div class="container players-grid">
+        <article class="player-card">
+          <div class="player-photo">
+            <img src="images/john.jpg" alt="Player One" onerror="this.style.opacity=0.85">
+          </div>
+          <div class="player-body">
+            <h3 class="player-name">John A. Deng</h3>
+            <p class="player-pos">Striker</p>
+            <p class="player-bio">Clinical finisher with lightning pace and a relentless work rate.</p>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-photo">
+            <img src="images/peter.jpg" alt="Player Two" onerror="this.style.opacity=0.85">
+          </div>
+          <div class="player-body">
+            <h3 class="player-name">Peter L. Kuol</h3>
+            <p class="player-pos">Central Midfielder</p>
+            <p class="player-bio">Midfield engine—great vision, sharp passing, and leadership on the field.</p>
+          </div>
+        </article>
+
+        <article class="player-card">
+          <div class="player-photo">
+            <img src="images/michael.jpg" alt="Player Three" onerror="this.style.opacity=0.85">
+          </div>
+          <div class="player-body">
+            <h3 class="player-name">Michael R. Ajok</h3>
+            <p class="player-pos">Left Back</p>
+            <p class="player-bio">Defensive rock with overlapping runs and precise crosses.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== MATCHES ========== -->
+    <section id="matches" class="matches-section">
+      <div class="container section-header">
+        <h2>Match Updates</h2>
+        <p class="section-sub">Fixtures, results, and countdowns to kick-off.</p>
+      </div>
+
+      <div class="container matches-grid">
+        <article class="match-card" data-datetime="2025-11-02T15:00:00Z">
+          <div class="match-row">
+            <div class="team">
+              <strong>Sport Website</strong>
+              <span class="team-sub">Home</span>
+            </div>
+            <div class="match-middle">
+              <div class="match-date">Nov 2, 2025 — 15:00 UTC</div>
+              <div class="countdown" aria-live="polite">Loading…</div>
+            </div>
+            <div class="team opponent">
+              <strong>Juba United</strong>
+              <span class="team-sub">Away</span>
+            </div>
+          </div>
+          <div class="match-actions">
+            <a class="btn btn-sm" href="#contact">Buy Tickets</a>
+            <a class="btn btn-ghost btn-sm" href="#news">Match Preview</a>
+          </div>
+        </article>
+
+        <article class="match-card match-result" data-datetime="2025-09-20T13:00:00Z" aria-label="Match result">
+          <div class="match-row">
+            <div class="team">
+              <strong>Sport Website</strong>
+              <span class="team-sub">Home</span>
+            </div>
+            <div class="match-middle">
+              <div class="match-date">Sep 20, 2025</div>
+              <div class="score">2 — 1</div>
+              <div class="match-note">W</div>
+            </div>
+            <div class="team opponent">
+              <strong>Blue Stars</strong>
+              <span class="team-sub">Away</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== NEWS / BLOG ========== -->
+    <section id="news" class="news-section">
+      <div class="container section-header">
+        <h2>Latest News</h2>
+        <p class="section-sub">Club updates, training notes, and match previews.</p>
+      </div>
+
+      <div class="container news-grid">
+        <article class="news-card">
+          <img class="news-img" src="images/Preseasontrainingkicksoff.jpg" alt="Training session" onerror="this.style.opacity=0.9">
+          <div class="news-body">
+            <h3 class="news-title">Pre-season training kicks off</h3>
+            <p class="news-summary">The squad returned to training this week as preparations intensify ahead of the new campaign.</p>
+            <a class="btn btn-ghost btn-sm" href="#news">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img class="news-img" src="images/Newsigningbolstersmidfield.jpg" alt="Signing" onerror="this.style.opacity=0.9">
+          <div class="news-body">
+            <h3 class="news-title">New signing bolsters midfield</h3>
+            <p class="news-summary">Sport Website announces the signing of a talented midfield prospect with international youth experience.</p>
+            <a class="btn btn-ghost btn-sm" href="#news">Read More</a>
+          </div>
+        </article>
+
+        <article class="news-card">
+          <img class="news-img" src="images/Communityoutreach.jpg" alt="Community" onerror="this.style.opacity=0.9">
+          <div class="news-body">
+            <h3 class="news-title">Community outreach in Juba</h3>
+            <p class="news-summary">Players visited local schools and delivered coaching sessions to young aspiring footballers.</p>
+            <a class="btn btn-ghost btn-sm" href="#news">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact-section">
+      <div class="container section-header">
+        <h2>Contact</h2>
+        <p class="section-sub">Get in touch — general enquiries, tickets, or media requests.</p>
+      </div>
+
+      <div class="container contact-grid">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+            <small class="error" id="nameError" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <small class="error" id="emailError" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+            <small class="error" id="messageError" aria-live="polite"></small>
+          </div>
+
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="formSuccess" class="form-success" role="status" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <aside class="contact-info" aria-label="Contact information">
+          <h3>Club Office</h3>
+          <p>Sport Website Football Club<br>Juba, South Sudan</p>
+          <p><strong>Email:</strong> info@sportwebsite.club</p>
+          <p><strong>Phone:</strong> +211 912 345 678</p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Twitter">X</a>
+            <a href="#" aria-label="Instagram">IG</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sport Website — All rights reserved.</p>
+      <p class="motto">Club motto: Pride • Passion • Power</p>
+    </div>
+  </footer>
+
+  <!-- GSAP CDN for animations (no build tools) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+
+  <!-- Main JS -->
+  <script src="script.js" defer></script>
+</body>
+</html>
